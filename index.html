@@ -25,6 +25,7 @@
       </a>
       <nav class="nav-links" aria-label="主要导航">
         <a href="#about">关于她</a>
+        <a href="#archive">档案馆</a>
         <a href="#likes">小喜好</a>
         <a href="#moments">照片墙</a>
         <a href="#growth">日常</a>
@@ -36,11 +37,16 @@
     <main id="top">
       <section class="hero section-band" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">给孙雨欣的小小收藏页</p>
+          <p class="eyebrow">Yuxin Memory Archive</p>
           <h1 id="hero-title">孙雨欣</h1>
           <p class="hero-subtitle">
             想把她可爱的样子、认真生活的样子，还有那些一起记住的小瞬间，都好好放在这里。
           </p>
+          <div class="hud-strip" aria-label="记忆档案状态">
+            <span><b>Memory Sync</b> 99%</span>
+            <span><b>Pink Signal</b> Online</span>
+            <span><b>Lovely Archive</b> Safe</span>
+          </div>
           <div class="hero-actions">
             <a class="button primary" href="#moments">看她的瞬间</a>
             <a class="button ghost" href="#note">写给她的话</a>
@@ -54,6 +60,7 @@
         </div>
 
         <div class="hero-visual" aria-label="孙雨欣主视觉照片">
+          <div class="scan-line" aria-hidden="true"></div>
           <img src="assets/photos/daily-1.jpg" alt="孙雨欣的主视觉照片" fetchpriority="high" />
           <button
             class="hero-badge surprise-trigger"
@@ -63,6 +70,65 @@
             <span>Pink mood</span>
             <strong>Soft day</strong>
           </button>
+        </div>
+      </section>
+
+      <section id="archive" class="section archive-section" aria-labelledby="archive-title">
+        <div class="section-heading">
+          <p class="eyebrow">Future Archive</p>
+          <h2 id="archive-title">未来记忆档案</h2>
+          <p class="section-note">把她喜欢的东西，存成几枚发光的记忆碎片。点一下，会有一点小提示。</p>
+        </div>
+        <div class="archive-grid" aria-label="未来记忆碎片">
+          <button class="archive-card surprise-trigger" type="button" data-surprise="Memory 01 已解锁：粉色心情适合今天，也适合她。">
+            <span>Memory 01</span>
+            <strong>粉色心情</strong>
+            <small>Pink signal detected</small>
+          </button>
+          <button class="archive-card surprise-trigger" type="button" data-surprise="Memory 02 已解锁：小零食不是负担，是快乐电量。">
+            <span>Memory 02</span>
+            <strong>小零食补给</strong>
+            <small>Snack energy loading</small>
+          </button>
+          <button class="archive-card surprise-trigger" type="button" data-surprise="Memory 03 已解锁：下一站可以慢慢选，重点是和她一起去。">
+            <span>Memory 03</span>
+            <strong>旅行坐标</strong>
+            <small>Travel coordinate saved</small>
+          </button>
+          <button class="archive-card surprise-trigger" type="button" data-surprise="Memory 04 已解锁：漂亮瞬间不用解释，照片已经替她说了。">
+            <span>Memory 04</span>
+            <strong>漂亮瞬间</strong>
+            <small>Glow moment archived</small>
+          </button>
+        </div>
+
+        <div class="signal-panel" aria-label="心动指数面板">
+          <div class="signal-heading">
+            <p class="eyebrow">Heartbeat Panel</p>
+            <h3>心动指数面板</h3>
+          </div>
+          <div class="signal-grid">
+            <article class="signal-item">
+              <span>可爱值</span>
+              <strong>99%</strong>
+              <i style="--level: 99%"></i>
+            </article>
+            <article class="signal-item">
+              <span>想见她指数</span>
+              <strong>100%</strong>
+              <i style="--level: 100%"></i>
+            </article>
+            <article class="signal-item">
+              <span>今日夸夸</span>
+              <strong>无限次</strong>
+              <i style="--level: 100%"></i>
+            </article>
+            <article class="signal-item">
+              <span>零食补给</span>
+              <strong>建议补货</strong>
+              <i style="--level: 72%"></i>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -262,10 +328,19 @@
           <button class="button primary secret-toggle" type="button" aria-expanded="false" aria-controls="secret-note">
             偷偷打开
           </button>
+          <button class="button ghost future-toggle" type="button" aria-expanded="false" aria-controls="future-note">
+            来自未来的一条消息
+          </button>
           <div class="secret-note" id="secret-note" hidden>
             <p>
               隐藏内容：今天也请记得，漂亮衣服可以多买一点，喜欢的零食可以多留一包，
               不开心的事情可以少想一点。你负责开心，我负责认真记得。
+            </p>
+          </div>
+          <div class="future-note" id="future-note" hidden>
+            <p>
+              来自未来的消息：请孙雨欣继续漂亮、开心、被好好爱着。未来的每一天，
+              也要把喜欢的小事认真收藏。
             </p>
           </div>
         </div>

@@ -5,7 +5,7 @@ backToTopButton?.addEventListener("click", () => {
 });
 
 const revealTargets = document.querySelectorAll(
-  ".profile-panel, .like-card, .photo-card, .timeline-item, .note-card, .fun-card"
+  ".profile-panel, .archive-card, .signal-panel, .like-card, .photo-card, .timeline-item, .note-card, .fun-card"
 );
 
 if ("IntersectionObserver" in window) {
@@ -138,6 +138,8 @@ document.querySelectorAll(".fun-card").forEach((button) => {
 
 const secretToggle = document.querySelector(".secret-toggle");
 const secretNote = document.querySelector("#secret-note");
+const futureToggle = document.querySelector(".future-toggle");
+const futureNote = document.querySelector("#future-note");
 
 secretToggle?.addEventListener("click", () => {
   if (!secretNote) return;
@@ -146,4 +148,13 @@ secretToggle?.addEventListener("click", () => {
   secretNote.hidden = !willOpen;
   secretToggle.setAttribute("aria-expanded", String(willOpen));
   secretToggle.textContent = willOpen ? "已经打开" : "偷偷打开";
+});
+
+futureToggle?.addEventListener("click", () => {
+  if (!futureNote) return;
+
+  const willOpen = futureNote.hidden;
+  futureNote.hidden = !willOpen;
+  futureToggle.setAttribute("aria-expanded", String(willOpen));
+  futureToggle.textContent = willOpen ? "未来消息已接收" : "来自未来的一条消息";
 });
