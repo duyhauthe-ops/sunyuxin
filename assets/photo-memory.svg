@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+  <rect width="900" height="700" fill="#ffd6e4"/>
+  <rect x="175" y="112" width="550" height="400" rx="8" fill="#fff" stroke="#b93662" stroke-width="10"/>
+  <path d="M450 270c-54-76-150-46-150 34 0 83 150 154 150 154s150-71 150-154c0-80-96-110-150-34Z" fill="#e95383"/>
+  <text x="450" y="610" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="42" font-weight="800" fill="#b93662">纪念瞬间</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 950">
+  <rect width="700" height="950" fill="#fff0f4"/>
+  <path d="M350 130c56 0 100 44 100 100s-44 100-100 100-100-44-100-100 44-100 100-100Z" fill="#ffd6e4"/>
+  <path d="M245 382h210l84 340H161Z" fill="#e95383"/>
+  <path d="M245 382c34 44 176 44 210 0" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round"/>
+  <path d="M238 720h224" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".85"/>
+  <text x="350" y="850" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="42" font-weight="800" fill="#b93662">穿搭照片</text>
+</svg>

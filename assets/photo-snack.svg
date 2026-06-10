@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+  <rect width="900" height="700" fill="#fff7f8"/>
+  <g transform="translate(230 150) rotate(-8)">
+    <rect width="190" height="250" rx="8" fill="#ffd36e" stroke="#b93662" stroke-width="10"/>
+    <circle cx="95" cy="112" r="48" fill="#fff"/>
+  </g>
+  <g transform="translate(500 140) rotate(9)">
+    <rect width="180" height="265" rx="8" fill="#f7a6bf" stroke="#b93662" stroke-width="10"/>
+    <circle cx="90" cy="120" r="44" fill="#fff"/>
+  </g>
+  <circle cx="450" cy="428" r="38" fill="#bfe8dc"/>
+  <text x="450" y="600" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="42" font-weight="800" fill="#b93662">小零食</text>
+</svg>
