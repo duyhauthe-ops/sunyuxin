@@ -7,7 +7,7 @@
 - `hero.jpg`：首页主视觉照片
 - `daily-1.jpg`：日常照片
 - `travel-1.jpg`：旅行照片
-- `campus-1.jpg`：校园或学习照片
+- `campus-1.jpg`：生活或旅行照片
 - `outfit-1.jpg`：穿搭或小裙子照片
 - `snack-1.jpg`：小零食相关照片
 - `memory-1.jpg`：你们想收藏的纪念照片
