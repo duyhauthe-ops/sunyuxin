@@ -7,6 +7,13 @@
       name="description"
       content="一个给孙雨欣的小小纪念网页。"
     />
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="孙雨欣 | 温柔闪闪发光" />
+    <meta property="og:description" content="一个给孙雨欣的小小纪念网页，收藏照片、喜欢和一点点小惊喜。" />
+    <meta property="og:url" content="https://duyhauthe-ops.github.io/sunyuxin/" />
+    <meta property="og:image" content="https://duyhauthe-ops.github.io/sunyuxin/assets/photos/daily-1.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
     <title>孙雨欣 | 温柔闪闪发光</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -21,6 +28,7 @@
         <a href="#likes">小喜好</a>
         <a href="#moments">照片墙</a>
         <a href="#growth">日常</a>
+        <a href="#fun">小惊喜</a>
         <a href="#note">悄悄话</a>
       </nav>
     </header>
@@ -46,11 +54,15 @@
         </div>
 
         <div class="hero-visual" aria-label="孙雨欣主视觉照片">
-          <img src="assets/photos/daily-1.jpg" alt="孙雨欣的主视觉照片" />
-          <div class="hero-badge">
+          <img src="assets/photos/daily-1.jpg" alt="孙雨欣的主视觉照片" fetchpriority="high" />
+          <button
+            class="hero-badge surprise-trigger"
+            type="button"
+            data-surprise="今天的隐藏提醒：看到这张照片的人，应该立刻夸她一句。"
+          >
             <span>Pink mood</span>
             <strong>Soft day</strong>
-          </div>
+          </button>
         </div>
       </section>
 
@@ -80,20 +92,20 @@
           </article>
           <article class="profile-panel stat-panel">
             <h3>她的小世界</h3>
-            <dl>
-              <div>
-                <dt>颜色</dt>
-                <dd>粉色</dd>
-              </div>
-              <div>
-                <dt>心情</dt>
-                <dd>甜甜的</dd>
-              </div>
-              <div>
-                <dt>愿望</dt>
-                <dd>多出去玩</dd>
-              </div>
-            </dl>
+            <div class="world-grid" aria-label="她的小世界">
+              <button class="world-card surprise-trigger" type="button" data-surprise="粉色不是普通颜色，是她的快乐滤镜。">
+                <span>颜色</span>
+                <strong>粉色</strong>
+              </button>
+              <button class="world-card surprise-trigger" type="button" data-surprise="甜甜的心情已到账，建议配一包喜欢的小零食。">
+                <span>心情</span>
+                <strong>甜甜的</strong>
+              </button>
+              <button class="world-card surprise-trigger" type="button" data-surprise="出门玩申请已通过，理由是：她开心很重要。">
+                <span>愿望</span>
+                <strong>多出去玩</strong>
+              </button>
+            </div>
           </article>
         </div>
       </section>
@@ -110,7 +122,7 @@
             <p>看到粉色的时候，总会觉得这很适合她，软软的，也亮亮的。</p>
           </article>
           <article class="like-card">
-            <img class="like-sticker" src="assets/cute-cat-bow.svg" alt="粉色蝴蝶结小猫插画" />
+            <img class="like-sticker" src="assets/cute-cat-bow.svg" alt="粉色蝴蝶结小猫插画" loading="lazy" />
             <h3>可爱猫咪风</h3>
             <p>蝴蝶结、小猫、圆圆的可爱东西，她喜欢，我也觉得很像她。</p>
           </article>
@@ -147,40 +159,40 @@
         </div>
 
         <div class="photo-wall">
-          <figure class="photo-card large">
-            <img src="assets/photos/daily-1.jpg" alt="孙雨欣的日常合照" />
+          <figure class="photo-card large" tabindex="0" role="button" data-full="assets/photos/daily-1.jpg" data-title="日常里的甜" data-note="这张适合放在首页，因为一眼就很有“这是她”的感觉。">
+            <img src="assets/photos/daily-1.jpg" alt="孙雨欣的日常合照" loading="lazy" />
             <figcaption>日常里的甜</figcaption>
           </figure>
-          <figure class="photo-card">
-            <img src="assets/photos/travel-1.jpg" alt="孙雨欣喜欢的动画和旅行瞬间" />
+          <figure class="photo-card" tabindex="0" role="button" data-full="assets/photos/travel-1.jpg" data-title="可爱收藏" data-note="喜欢可爱的东西这件事，本身也很可爱。">
+            <img src="assets/photos/travel-1.jpg" alt="孙雨欣喜欢的动画和旅行瞬间" loading="lazy" />
             <figcaption>可爱收藏</figcaption>
           </figure>
-          <figure class="photo-card">
-            <img src="assets/photos/campus-1.jpg" alt="孙雨欣的生活照片" />
+          <figure class="photo-card" tabindex="0" role="button" data-full="assets/photos/campus-1.jpg" data-title="一起看见的风景" data-note="有些照片不是因为风景特别大，而是因为一起看的人特别重要。">
+            <img src="assets/photos/campus-1.jpg" alt="孙雨欣的生活照片" loading="lazy" />
             <figcaption>一起看见的风景</figcaption>
           </figure>
-          <figure class="photo-card tall">
-            <img src="assets/photos/outfit-1.jpg" alt="孙雨欣的穿搭照片拼图" />
+          <figure class="photo-card tall" tabindex="0" role="button" data-full="assets/photos/outfit-1.jpg" data-title="漂亮裙装" data-note="好看的衣服遇到她，就会变成刚刚好的漂亮。">
+            <img src="assets/photos/outfit-1.jpg" alt="孙雨欣的穿搭照片拼图" loading="lazy" />
             <figcaption>漂亮裙装</figcaption>
           </figure>
-          <figure class="photo-card">
-            <img src="assets/photos/hero.jpg" alt="Hello Kitty 小物照片" />
+          <figure class="photo-card" tabindex="0" role="button" data-full="assets/photos/hero.jpg" data-title="小可爱雷达" data-note="这个小物件的可爱程度，建议列入今日重点观察对象。">
+            <img src="assets/photos/hero.jpg" alt="Hello Kitty 小物照片" loading="lazy" />
             <figcaption>小可爱雷达</figcaption>
           </figure>
-          <figure class="photo-card">
-            <img src="assets/photos/memory-1.jpg" alt="孙雨欣的纪念照片拼图" />
+          <figure class="photo-card" tabindex="0" role="button" data-full="assets/photos/memory-1.jpg" data-title="值得收藏" data-note="有些瞬间会自己发光，负责的人只需要认真保存。">
+            <img src="assets/photos/memory-1.jpg" alt="孙雨欣的纪念照片拼图" loading="lazy" />
             <figcaption>值得收藏</figcaption>
           </figure>
-          <figure class="photo-card">
-            <img src="assets/photos/travel-2.jpg" alt="孙雨欣的旅行氛围照片" />
+          <figure class="photo-card" tabindex="0" role="button" data-full="assets/photos/travel-2.jpg" data-title="风景和她" data-note="阳光、风景和她放在一起，画面就会变得很安静。">
+            <img src="assets/photos/travel-2.jpg" alt="孙雨欣的旅行氛围照片" loading="lazy" />
             <figcaption>风景和她</figcaption>
           </figure>
-          <figure class="photo-card">
-            <img src="assets/photos/portrait-1.jpg" alt="牵手纪念照片" />
+          <figure class="photo-card" tabindex="0" role="button" data-full="assets/photos/portrait-1.jpg" data-title="悄悄牵手" data-note="这张不用解释，懂的人会自己微笑一下。">
+            <img src="assets/photos/portrait-1.jpg" alt="牵手纪念照片" loading="lazy" />
             <figcaption>悄悄牵手</figcaption>
           </figure>
-          <figure class="photo-card">
-            <img src="assets/photos/memory-2.jpg" alt="孙雨欣的精致写真拼图" />
+          <figure class="photo-card" tabindex="0" role="button" data-full="assets/photos/memory-2.jpg" data-title="漂亮瞬间" data-note="漂亮不是用力证明，是她站在那里就已经成立。">
+            <img src="assets/photos/memory-2.jpg" alt="孙雨欣的精致写真拼图" loading="lazy" />
             <figcaption>漂亮瞬间</figcaption>
           </figure>
         </div>
@@ -210,6 +222,32 @@
         </div>
       </section>
 
+      <section id="fun" class="section fun-section" aria-labelledby="fun-title">
+        <div class="section-heading">
+          <p class="eyebrow">Tiny Surprise</p>
+          <h2 id="fun-title">雨欣快乐补给站</h2>
+          <p class="section-note">这里放一点轻松的小按钮。认真页面也可以有一点不太正经的快乐。</p>
+        </div>
+        <div class="fun-grid" aria-label="快乐补给选项">
+          <button class="fun-card" type="button" data-fun="praise">
+            <span>01</span>
+            <strong>今日夸夸</strong>
+            <small>点一下，补充一句夸奖。</small>
+          </button>
+          <button class="fun-card" type="button" data-fun="snack">
+            <span>02</span>
+            <strong>零食理由生成器</strong>
+            <small>给吃小零食找一个正当理由。</small>
+          </button>
+          <button class="fun-card" type="button" data-fun="travel">
+            <span>03</span>
+            <strong>出门玩申请书</strong>
+            <small>理由充分，语气认真。</small>
+          </button>
+        </div>
+        <p class="fun-result" aria-live="polite">请选择一个快乐按钮。</p>
+      </section>
+
       <section id="note" class="section note-section" aria-labelledby="note-title">
         <div class="note-card">
           <p class="eyebrow">For Her</p>
@@ -221,9 +259,31 @@
           <p>
             可能它还不够完美，但它是认真做的。希望你看到的时候，会觉得自己真的被好好记着。
           </p>
+          <button class="button primary secret-toggle" type="button" aria-expanded="false" aria-controls="secret-note">
+            偷偷打开
+          </button>
+          <div class="secret-note" id="secret-note" hidden>
+            <p>
+              隐藏内容：今天也请记得，漂亮衣服可以多买一点，喜欢的零食可以多留一包，
+              不开心的事情可以少想一点。你负责开心，我负责认真记得。
+            </p>
+          </div>
         </div>
       </section>
     </main>
+
+    <div class="photo-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="photo-modal-title">
+      <button class="modal-close" type="button" aria-label="关闭照片预览">×</button>
+      <div class="modal-card">
+        <img class="modal-image" alt="" />
+        <div class="modal-copy">
+          <h3 id="photo-modal-title"></h3>
+          <p class="modal-note"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="surprise-toast" role="status" aria-live="polite" hidden></div>
 
     <footer class="site-footer">
       <span>Made with pink little wishes</span>
